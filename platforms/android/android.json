@@ -85,7 +85,7 @@
             "PACKAGE_NAME": "io.cordova.hellocordova"
         },
         "cordova-plugin-iosrtc": {
-            "PACKAGE_NAME": "io.cordova.hellocordova"
+            "PACKAGE_NAME": "com.mozzaz.mozzaztalk"
         }
     },
     "dependent_plugins": {},

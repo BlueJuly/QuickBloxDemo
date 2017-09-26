@@ -10,7 +10,7 @@
         "spec": "latest",
         "type": "tag"
       },
-      "D:\\Mozzaz\\HelloVideoChat\\node_modules"
+      "/Users/xiaochuandai/Desktop/demo/QuickBloxDemo/node_modules"
     ]
   ],
   "_from": "cordova-plugin-iosrtc@latest",
@@ -45,7 +45,7 @@
   "_shasum": "152d90f5c78ebc9f8d55fc4b46da5c153fa3414d",
   "_shrinkwrap": null,
   "_spec": "cordova-plugin-iosrtc",
-  "_where": "D:\\Mozzaz\\HelloVideoChat\\node_modules",
+  "_where": "/Users/xiaochuandai/Desktop/demo/QuickBloxDemo/node_modules",
   "author": {
     "name": "Iñaki Baz Castillo",
     "url": "https://inakibaz.me"

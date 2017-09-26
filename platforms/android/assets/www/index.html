@@ -2,6 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="
+                            default-src * data: blob: ws: wss: gap://ready file://*;
+                            style-src * 'unsafe-inline'; 
+                            script-src * 'unsafe-inline' 'unsafe-eval';
+                            connect-src * ws: wss: blob:;">
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>QuickBlox JavaScript WebRTC sample</title>
@@ -355,6 +361,11 @@
           // Read more here https://github.com/eface2face/cordova-plugin-iosrtc
           if (window.device.platform === 'iOS') {
               cordova.plugins.iosrtc.registerGlobals();
+              var script = document.createElement("script");
+                    script.type = "text/javascript";
+                    script.src = "https://webrtc.github.io/adapter/adapter-latest.js";
+                    script.async = false;
+                    document.getElementsByTagName("head")[0].appendChild(script);
           }else if (window.device.platform === 'Android') {
               var permissions = cordova.plugins.permissions;
             permissions.hasPermission(permissions.CAMERA, checkVideoPermissionCallback, null);
